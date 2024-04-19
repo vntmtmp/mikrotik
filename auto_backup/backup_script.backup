@@ -1,0 +1,2 @@
+/system backup save name=backup-([/system clock get date] . "-" . [/system clock get time] . "-" . [/system identity get name])
+/system scheduler add name=backup_schedule interval=1d on-event=backup_script start-time=03:00:00
